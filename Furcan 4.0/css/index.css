@@ -1,0 +1,122 @@
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root {
+
+}
+  
+* {
+    font-family: "Dekko", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+img {
+    display: block;
+}
+
+body {
+    background-image: url();
+}
+
+
+
+/* Fixed */
+
+.fixed {
+    height: 6rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+}
+
+
+
+/* nav */
+
+nav {
+    height: 4rem;
+    width: 90%;
+
+    background-color: #BF0A80;
+    border: solid 5px #931a68 ;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 5.5rem;
+    transition: .5s;
+}
+.logo:hover {
+    transform: scale(.9);
+}
+
+ul {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.one {
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    justify-content: start;
+}
+
+.two {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+
+    height: 100%;
+    width: 100%;
+}
+.two a {
+    margin: 0 2rem;
+    transition: .4s;
+}
+.two a:hover {
+    color: black;
+}
+
+@media screen and (max-width: 550px) {
+    .two a {
+        margin: 0 .5rem;
+    }
+}
+
+
+
+/* Header */
+
+header {
+    height: 20rem;
+    width: 100%;
+
+    background-image: url(img);
+}
