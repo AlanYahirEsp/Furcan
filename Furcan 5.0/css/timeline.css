@@ -1,0 +1,279 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+img {
+  display: block;
+}
+
+.pr {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: .1rem;
+}
+
+
+/* Header */
+
+header {
+  height: 7rem;
+  width: 100%;
+  
+}
+.background {
+  height: 4rem;
+  width: auto;
+
+  background-image: url(../imgs/banner/advertisement.png);
+}
+nav {
+  height: 3rem;
+  width: auto;
+
+  background-color: #a54949;
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+ul {
+  display: inline-flex;
+}
+li {
+  margin: 0 1rem;
+
+  font-family: "Jersey 20", sans-serif;
+
+  font-size: 1.5rem;
+}
+
+
+.month {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+
+  text-align: center;
+
+  width: auto;
+  height: auto;
+
+
+  color: white;
+
+  cursor: auto;
+}
+@media screen and (max-width: 850px) {
+  .month {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  li {
+    margin: 0 1rem;
+  
+    font-family: "Jersey 20", sans-serif; 
+  
+    font-size: .9rem;
+  }
+
+}
+@media screen and (min-width: 1279px) {
+  .month {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+.box {
+  height: auto;
+  width: 23rem;
+
+  margin: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.week {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  border: solid 1px rgb(0, 0, 0);
+  border-top: none;
+  border-end-end-radius: .5rem;
+  border-end-start-radius: .5rem;
+
+  padding: .3rem;
+  margin: 0 1rem;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: .2rem;
+
+  height: 2rem;
+  width: 2rem;
+
+  background-color: #d17373;
+}
+
+.day img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.day img.grande {
+  transform: scale(5);
+}
+
+.tr {
+  border-radius: 0 .7rem 0 0;
+}
+.tl {
+  border-radius: .7rem 0 0 0;
+}
+.bl {
+  border-radius: 0 0 .7rem 0;
+}
+.bb {
+  border-radius: 0 0 .5rem .5rem ;
+}
+.bc {
+  border-radius: 0 .5rem .5rem 0;
+}
+
+.name {
+  height: 3rem;
+  width: 21rem;
+
+  background-color: rgb(168, 134, 240);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: solid 1px rgb(0, 0, 0);
+  border-radius: .5rem;
+  
+  margin: 0rem auto 0rem auto;
+}
+
+/* Big */
+
+.imagen {
+  width: 32px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+
+
+  max-width: 100%; /* La imagen no puede ser más ancha que el contenedor */
+  max-height: 100%; /* La imagen no puede ser más alta que el contenedor */
+  display: block; 
+}
+
+.imagen.grande {
+  transform: scale(5);
+}
+
+.klor {
+  border: 1px solid black;
+  background-color: rgb(110, 81, 81);
+}
+
+.borde-anima {
+  width: 200px; /* Ancho del elemento */
+  height: 100px; /* Alto del elemento */
+  background-color: #f0f0f0; /* Color de fondo */
+  border: 2px solid red; /* Borde inicial */
+  border-radius: 5px; /* Radio de borde inicial */
+  animation: cambio-color 1s infinite alternate; /* Aplicar animación de cambio de color */
+}
+
+@keyframes cambio-color {
+  0% {
+    border-color: red; /* Color inicial del borde */
+  }
+  25% {
+    border-color: blue; /* Cambio de color en el borde */
+  }
+  50% {
+    border-color: green; /* Cambio de color en el borde */
+  }
+  75% {
+    border-color: orange; /* Cambio de color en el borde */
+  }
+  100% {
+    border-color: red; /* Color final del borde */
+  }
+}
+
+
+/* Footer */
+
+footer {
+  height: 6rem;
+  width: auto;
+
+  border-top-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+
+  background-color: rgb(116, 61, 61);
+}
+.footer_items {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.line {
+  color: white;
+}
+
+footer a img {
+  height: 2rem;
+
+  margin: 0 .4rem;
+}
+
+@media screen and (max-width: 720px) {
+  footer img {
+      margin: 0 .2rem;
+  }
+}
+
+/* Footer */

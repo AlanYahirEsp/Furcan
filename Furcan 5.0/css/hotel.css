@@ -1,0 +1,290 @@
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+img {
+    display: block;
+}
+
+body {
+    background-image: url(../imgs/imgs-hotel/background-hotel.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Header */
+
+header {
+    height: 10vh;
+    width: auto;
+}
+
+.background {
+    background-image: url(../imgs/backgrounds/background_banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+} 
+
+/* Barra de navegacion */
+
+nav {
+    background-color: #a54949;
+
+    height: 4rem;
+    width: auto;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    -webkit-box-shadow: 0px 21px 36px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 21px 36px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 21px 36px 0px rgba(0,0,0,0.75);
+}
+ul {
+    margin: 0 2rem;
+    display: flex;
+}
+.item_nav {
+    margin: 0 2rem;
+
+    color: white;
+
+    font-family: "Jersey 20", sans-serif;
+
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 720px) {
+    .item_nav {
+        margin: 0 .4rem;
+    
+        color: white;
+    
+        font-family: "Jersey 20", sans-serif; 
+    
+        font-size: .9rem;
+    }
+}
+
+/* Barra de navegacion */
+
+/* Index */
+
+.logo {
+    height: 10rem;
+    margin: 2rem auto;
+}
+
+
+.present {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 1rem;
+
+    border: solid 3px white;
+
+    padding: 1rem;
+
+    overflow: hidden;
+}
+@media screen and (max-width: 800px) {
+    .present {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.img-present {
+    width: auto;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+.photography {
+    width: 100%;
+    height: 100%;
+
+}
+
+.text-present {
+    margin: 1rem;
+
+    text-align:justify;
+
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-present h2 {
+    text-align: center;
+    margin: 1rem;
+}
+
+.btn-aristospage {
+    text-align: center;
+    font-size: 1.4rem;
+
+    margin: 1rem;
+}
+
+.btn-rtcy {
+    background-color: #a54949;
+    padding: 1rem;
+
+}
+.btn-rtcy:hover {
+    background-color: #e46161;
+}
+
+/* photos */
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 2rem;
+    margin: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+    .photos { 
+        grid-template-columns: 1fr; 
+    }
+}
+
+.photos div img {
+    width: 100%;
+    height: auto;
+    border: solid 5px rgba(255, 255, 255, 0.438);
+}
+
+.title {
+    height: 3rem;
+    margin: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+
+    text-align: center;
+}
+.ubication p {
+    border: solid 1px white;
+
+    border-radius: 1rem 3rem 1rem 3rem;
+
+    padding: 2rem;
+}
+@media screen and (min-width: 720px) {
+    .ubication p {
+        font-size: 1.8rem;
+    }
+}
+.ubication {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 2rem auto;
+
+    width: 80%;
+}
+.link-hotel {
+    color: skyblue;
+}
+
+
+
+/* Archivo: styles.css */
+
+.map-container {
+    position: relative;
+    width: 80%;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+
+    margin: 4rem auto;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Footer */
+
+footer {
+    height: 6rem;
+    width: auto;
+
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+
+    background-color: rgb(116, 61, 61);
+}
+.footer_items {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.line {
+    color: white;
+}
+
+footer a img {
+    height: 2rem;
+
+    margin: 0 .4rem;
+}
+
+@media screen and (max-width: 720px) {
+    footer img {
+        margin: 0 .2rem;
+    }
+}
+
+/* Footer */

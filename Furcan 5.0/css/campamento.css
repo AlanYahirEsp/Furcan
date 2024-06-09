@@ -1,0 +1,247 @@
+/* Estilos generales */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+img {
+    display: block;
+}
+body {
+    background-image: url(../imgs/imgs-campamento/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: auto;
+
+    background-color: rgb(76, 143, 136);
+    
+    height: 10rem;
+    width: auto;
+}
+.logo {
+    height: 5rem;
+}
+
+.box_title {
+    font-family: 'Light Beach', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    height: 60%;
+    width: auto;
+}
+.box_nav {
+    height: 40%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+
+    background-color: rgb(45, 90, 85);
+}
+.item_nav {
+    margin: 0 1rem;
+
+    font-size: .6rem;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Logo */
+
+.furcan{
+    height: 20rem;
+    width: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_furcan {
+    height: 12rem;
+}
+
+
+
+/* Principal */
+
+.principal {
+    background-color: rgb(45, 90, 85);
+
+    border-bottom: solid 3px rgb(38, 102, 96);
+    border-top: solid 3px rgb(38, 102, 96);
+
+    min-height: 30rem;
+    height: auto;
+    width: auto;
+
+    padding: 1rem;
+}
+
+.container {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+
+    height: 30rem;
+
+    padding: 1rem;
+
+    border: solid 3px white;
+
+    color: white;
+
+    text-align: center;
+}
+
+.text_main {
+    letter-spacing: .1rem;
+    font-size: 3rem;
+
+    margin-bottom: 1rem;
+
+    height: auto;
+    width: auto;
+}
+.ps{
+    margin-bottom: 1rem;
+
+    font-size: 1.5rem;
+}
+.text_bt{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 520px) {
+    .text_main {
+        font-size: 2rem;
+    }
+    .ps{
+        font-size: 1rem;
+    }
+    .text_bt{
+        font-size: 1rem;
+    }
+    .item_nav {
+        font-size: .5rem;
+        
+    }
+    .img_furcan {
+        height: 6rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .text_main {
+        font-size: 3.7rem;
+    }
+    .ps{
+        font-size: 2rem;
+    }
+    .text_bt{
+        font-size: 1.7rem;
+    }
+}
+
+.island {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 15rem;
+    width: auto;
+
+    padding: 1rem;
+}
+
+.img_fur {
+    height: 6rem;
+}
+
+/* Vid-Content */
+
+.video-container {
+    position: relative;
+    width: fit-content; /* Ajusta el ancho del contenedor al contenido */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 10px; /* Añade un pequeño borde alrededor del video */
+}
+  
+  .video-container video {
+    width: 100%;
+    height: auto; /* Altura automática para mantener la relación de aspecto */
+
+    border: solid .5rem white;
+
+    margin: 5rem auto;
+}
+
+/* Vid-Content */
+
+.extra-info {
+    height: auto;
+    width: auto;
+
+    background-color: rgb(45, 90, 85);
+    padding: 1rem;  
+}
+.info{
+    border: solid .3rem white;
+    padding: 1rem;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text_info {
+    text-align: center;
+
+    color: white;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .1rem;
+
+    font-size: 1.2rem;
+}

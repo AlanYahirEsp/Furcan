@@ -1,0 +1,414 @@
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+img {
+    display: block;
+}
+
+body {
+    background-image: url(../imgs/imgs-packages/bkmedieval.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Header */
+
+header {
+    height: 10vh;
+    width: auto;
+}
+
+.background {
+    background-image: url(../imgs/backgrounds/background_banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+} 
+
+/* Barra de navegacion */
+
+nav {
+    background-color: #a54949;
+
+    height: 4rem;
+    width: auto;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    -webkit-box-shadow: 0px 21px 36px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 21px 36px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 21px 36px 0px rgba(0,0,0,0.75);
+}
+ul {
+    margin: 0 2rem;
+    display: flex;
+}
+.item_nav {
+    margin: 0 2rem;
+
+    color: white;
+
+    font-family: "Jersey 20", sans-serif; 
+
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 720px) {
+    .item_nav {
+        margin: 0 .4rem;
+    
+        color: white;
+    
+        font-family: "Jersey 20", sans-serif; 
+    
+        font-size: .9rem;
+    }
+}
+
+/* Barra de navegacion */
+
+/* Banner */
+
+.container {
+    height: auto;
+    width: 90%;
+
+    background-color: rgba(0, 0, 0, 0.253);
+    margin: 2rem auto;
+    border-radius: 2rem;
+}
+
+.content {
+    color: white;
+
+    text-align: justify;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 2rem;
+    padding: 1.5rem;
+}
+
+.content h1 {
+    font-size: 3em;
+    Font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.content p {
+    font-size: 2em;
+    font-family: "Caudex", serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+.fm {
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.int {
+    margin: 5rem;
+}
+
+.btn {
+    height: 3rem;
+    width: 15rem;
+
+    background-color: #a54949;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: .05rem;
+    border: solid 1px white;
+    padding: 1rem 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Banner */
+
+
+.mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    color: white;
+
+    font-size: 1.5em;
+    gap: .5rem;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    text-align: center;
+
+    width: 80%;
+    margin: auto;
+}
+
+.p-mid {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Packages */
+
+.package {
+    min-height: 20rem;
+    width: 90%;
+    margin: 3rem auto;
+    background-color: rgba(0, 0, 0, 0.253);
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0rem;
+    transition: height 0.3s; /* Transición suave para la altura */
+}
+
+@media screen and (max-width: 1280px) {
+    .package {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.pack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Para que el contenedor de texto esté debajo de la imagen */
+    position: relative;
+    transition: height 1s; /* Transición suave para la altura */
+
+    margin-top: 4rem;
+}
+
+.pack img {
+    width: 90%;
+    height: auto;
+    border-radius: 1rem;
+    border: solid 2px black
+}
+
+.text-container-wrapper {
+    width: 100%;
+    overflow: hidden; /* Esconde el contenido que excede la altura máxima */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+
+    
+}
+
+.text-container {
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    opacity: 0; /* Transparente por defecto */
+    max-height: 0; /* Altura máxima 0 por defecto */
+    transition: opacity 0.3s, max-height 0.3s; /* Transición suave para la aparición */
+
+    
+}
+
+.text-container.show {
+    opacity: 1; /* Opacidad completa */
+    max-height: 100rem; /* Ajusta este valor según sea necesario */
+
+    border: solid 3px black;
+    border-radius: 2rem;
+}
+
+.inf-box {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+
+    font-size: 2em;
+    font-family: "Caudex", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .inf-box {
+        font-size: 1.3rem;
+    }
+}
+
+.inf-box li p span {
+    color: red;
+    
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .3rem;
+}
+
+.sig {
+            color: red;
+}
+
+.inf-box li span.price {
+    font-size: 4rem;
+    color: rgb(144, 2, 2);
+}
+
+.mxn {
+    font-size: 1rem;
+}
+
+/* Plus */
+
+.plus {
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    text-align: center;
+}
+
+/* Hotel */
+
+.hotel {
+    background-image: url(../imgs/imgs-info/hotel.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+    height: 10rem;
+    width: 90%;
+    margin: 2rem auto;
+
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+
+    border: solid 1px white;
+}
+
+.hotel p {
+    margin: .2rem;
+}
+
+/* Hotel */
+
+/* Register */
+
+.register {
+    height: 25rem;
+    width: 90%;
+
+    margin: 3rem auto 3rem auto;
+    background-color: rgba(0, 0, 0, 0.253);
+    border-radius: 2rem;
+
+    padding: 2rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tk {
+    margin-bottom: 2rem;
+}
+.ft {
+    color: white;
+}
+/* Register */
+
+/* Footer */
+
+footer {
+    height: 6rem;
+    width: auto;
+
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+
+    background-color: rgb(116, 61, 61);
+}
+.footer_items {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.line {
+    color: white;
+}
+
+footer a img {
+    height: 2rem;
+
+    margin: 0 .4rem;
+}
+
+@media screen and (max-width: 720px) {
+    footer img {
+        margin: 0 .2rem;
+    }
+}
+
+/* Footer */

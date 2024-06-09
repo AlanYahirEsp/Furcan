@@ -1,0 +1,217 @@
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+img {
+    display: block;
+}
+
+body {
+    background-color: #321b1b;
+}
+
+
+/* Header */
+
+header {
+    height: 10vh;
+    width: auto;
+}
+
+.background {
+    background-image: url(../imgs/backgrounds/background_banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+} 
+
+/* Barra de navegacion */
+
+nav {
+    background-color: #a54949;
+
+    height: 4rem;
+    width: auto;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    -webkit-box-shadow: 0px 21px 36px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 21px 36px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 21px 36px 0px rgba(0,0,0,0.75);
+}
+ul {
+    margin: 0 2rem;
+    display: flex;
+}
+.item_nav {
+    margin: 0 2rem;
+
+    color: white;
+
+    font-family: "Jersey 20", sans-serif; 
+
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 720px) {
+    .item_nav {
+        margin: 0 .4rem;
+    
+        color: white;
+    
+        font-family: "Jersey 20", sans-serif; 
+    
+        font-size: .9rem;
+    }
+}
+
+/* Barra de navegacion */
+
+/* Principal */
+
+.intro {
+    margin: 1rem;
+
+    height: auto;
+    width: auto;
+
+    display: grid;
+}
+
+.box {
+    height: 6rem;
+    width: auto;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    background-color: #a54949;
+
+    border-radius: .5rem;
+    border: solid 3px white;
+
+    color: white;
+
+    margin: 1rem 0;
+    padding: 1rem;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+
+    font-size: .7rem;
+    letter-spacing: .05rem;
+
+    transition: .1s;
+}
+
+.box:hover {
+    background-color: #d35e5e;
+}
+.box:focus {
+    background-color: #d35e5e;
+}
+
+.c1 {
+    grid-row: 1/2;
+    justify-content: start;
+    text-align: start;
+
+    background-image: url(../imgs/imgs-info/cuestions.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.c2 {
+    grid-row: 2/3;
+    text-align: end;
+
+    background-image: url(../imgs/imgs-info/bk2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.c3 {
+    grid-row: 3/4;
+    justify-content: start;
+    text-align: start;
+
+    background-image: url(../imgs/imgs-info/viewfurcancito.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.c4 {
+    grid-row: 4/5;
+    text-align: end;
+}
+.c5 {
+    grid-row: 5/6;
+    justify-content: start;
+    text-align: start;
+}
+
+
+/* Principal */
+
+/* Footer */
+
+footer {
+    height: 6rem;
+    width: auto;
+
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+
+    background-color: rgb(116, 61, 61);
+}
+.footer_items {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.line {
+    color: white;
+}
+
+footer a img {
+    height: 2rem;
+
+    margin: 0 .4rem;
+}
+
+@media screen and (max-width: 720px) {
+    footer img {
+        margin: 0 .2rem;
+    }
+}
+
+/* Footer */

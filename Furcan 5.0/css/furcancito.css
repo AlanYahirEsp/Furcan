@@ -1,0 +1,170 @@
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+img {
+    display: block;
+}
+
+body {
+    background-color: #321b1b;
+}
+
+
+/* Header */
+
+header {
+    height: 10vh;
+    width: auto;
+}
+
+.background {
+    background-image: url(../imgs/backgrounds/background_banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+} 
+
+/* Barra de navegacion */
+
+nav {
+    background-color: #a54949;
+
+    height: 4rem;
+    width: auto;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    -webkit-box-shadow: 0px 21px 36px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 21px 36px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 21px 36px 0px rgba(0,0,0,0.75);
+}
+ul {
+    margin: 0 2rem;
+    display: flex;
+}
+.item_nav {
+    margin: 0 2rem;
+
+    color: white;
+
+    font-family: "Jersey 20", sans-serif; 
+
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 720px) {
+    .item_nav {
+        margin: 0 .4rem;
+    
+        color: white;
+    
+        font-family: "Jersey 20", sans-serif; 
+    
+        font-size: .9rem;
+    }
+}
+
+/* Barra de navegacion */
+
+
+.present {
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 2rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.present h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 1rem;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    height: 30rem;
+    width: auto;
+
+    margin: 2rem 0 2rem 0;
+}
+
+
+
+/* Footer */
+
+footer {
+    height: 6rem;
+    width: auto;
+
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+
+    background-color: rgb(116, 61, 61);
+}
+.footer_items {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.line {
+    color: white;
+}
+
+footer a img {
+    height: 2rem;
+
+    margin: 0 .4rem;
+}
+
+@media screen and (max-width: 720px) {
+    footer img {
+        margin: 0 .2rem;
+    }
+}
+
+/* Footer */
+
+
